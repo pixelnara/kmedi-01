@@ -398,6 +398,7 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: var(--header-h);
 }
 .hero__eyebrow {
   font-family: var(--serif);
@@ -416,7 +417,6 @@ ul {
   font-size: clamp(44px, 6.6vw, 104px);
   line-height: 1.02;
   letter-spacing: -0.01em;
-  margin-top: 130px;
   max-width: 20ch;
   opacity: 0;
   transform: translateY(28px);
@@ -1631,7 +1631,6 @@ ul {
 
   /* Hero */
   .hero__title {
-    margin-top: 70px;
     font-size: clamp(38px, 8vw, 60px);
   }
   .hero__desc {

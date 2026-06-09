@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '/whyus/' /Users/sujinhwang/Documents/1.Develop/4.Claude-Design/Tour3/site/styles.css)"
+    ]
+  }
+}
