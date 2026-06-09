@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KMEDITOUR — Premium Concierge for Korea</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============================== HEADER ============================== -->
+<header class="header">
+  <div class="header__util">
+    <div class="wrap">
+      <a href="#">쇼핑</a>
+      <span class="util-sep"></span>
+      <a href="#">자주묻는질문</a>
+      <span class="util-sep"></span>
+      <a href="#">회사소개</a>
+      <span class="util-sep"></span>
+      <a href="#" class="lang">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg>
+        KOR
+      </a>
+    </div>
+  </div>
+  <div class="header__main">
+    <div class="wrap">
+      <a href="#" class="brand">KMEDITOUR<small>Premium Concierge in Seoul</small></a>
+      <nav class="gnb">
+        <a href="#">홈</a>
+        <a href="#how">서비스 이용 방법</a>
+        <a href="#services">서비스</a>
+        <a href="#whyus">우리를 선택하는 이유</a>
+        <a href="#why">매거진</a>
+      </nav>
+      <div class="header__right">
+        <a href="#booking" class="btn btn--primary">컨설팅 받기</a>
+        <button class="menu-btn" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============================== GNB OVERLAY ============================== -->
+<div class="gnb-overlay">
+  <div class="wrap">
+    <div class="gnb-overlay__bar">
+      <a href="#" class="brand" style="color:var(--heading)">KMEDITOUR<small style="color:var(--body2)">Premium Concierge in Seoul</small></a>
+      <button class="gnb-overlay__close" aria-label="닫기">&times;</button>
+    </div>
+    <div class="gnb-cols">
+      <div class="gnb-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">무료 온라인 상담</a></li>
+          <li><a href="#services">진료 예약 대행</a></li>
+          <li><a href="#services">전담 통역 서비스</a></li>
+          <li><a href="#services">교통 &amp; 이동 지원</a></li>
+          <li><a href="#services">숙소 &amp; 회복 케어</a></li>
+        </ul>
+      </div>
+      <div class="gnb-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">지방흡입 &amp; 바디</a></li>
+          <li><a href="#">안면 미용 시술</a></li>
+          <li><a href="#">피부 &amp; 안티에이징</a></li>
+          <li><a href="#">모발 이식</a></li>
+          <li><a href="#">종합 건강검진</a></li>
+        </ul>
+      </div>
+      <div class="gnb-col">
+        <h4>Travel</h4>
+        <ul>
+          <li><a href="#">서울 관광 안내</a></li>
+          <li><a href="#">프리미엄 숙소</a></li>
+          <li><a href="#">미식 &amp; 다이닝</a></li>
+          <li><a href="#">쇼핑 컨시어지</a></li>
+          <li><a href="#">VIP 차량 지원</a></li>
+        </ul>
+      </div>
+      <div class="gnb-col">
+        <h4>Kmeditour</h4>
+        <ul>
+          <li><a href="#how">서비스 이용 방법</a></li>
+          <li><a href="#why">매거진</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero">
+  <div class="hero__slides">
+    <div class="hero__slide is-active" style="background-image:url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1920&q=80&auto=format&fit=crop')"></div>
+    <div class="hero__slide is-active" style="background-image:url('https://images.unsplash.com/photo-1775257796023-64e5bb47d046?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+    <!-- <div class="hero__slide is-active" style="background-image:url('https://plus.unsplash.com/premium_photo-1661501198621-b684cf4a67ff?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div> -->
+    <div class="hero__slide is-active" style="background-image:url('https://plus.unsplash.com/premium_photo-1658506638425-25dc93218082?q=80&w=3047&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+  </div>
+  <div class="absolute inset-0 bg-black/40"></div>
+  <div class="hero__inner wrap">
+    <!-- <p class="hero__eyebrow">Premium Concierge Service</p> -->
+    <h1 class="hero__title">의료부터 관광까지<br/>모든 케어</h1>
+    <p class="hero__desc">전담 코디네이터가 당신만의 맞춤 케어로 특별한 한국 여행을 완성합니다.</p>
+  </div>
+  <div class="hero__dots" style="display:none">
+    <button class="is-active" aria-label="슬라이드 1"></button>
+  </div>
+  <div class="hero__scroll">
+    <span>SCROLL</span>
+    <span class="bar"></span>
+  </div>
+</section>
+
+<!-- ============================== HOW IT WORKS ============================== -->
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="hiw__head" data-reveal>
+      <p class="eyebrow eyebrow--center">KMEDITOUR</p>
+      <h2 class="display h-lg">서비스 이용 방법</h2>
+    </div>
+    <div class="hiw__grid">
+      <article class="hiw-card" data-reveal>
+        <div class="hiw-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5a6.5 6.5 0 0 1 6.5-6.5h2A6.5 6.5 0 0 1 18 11.5 6.5 6.5 0 0 1 11.5 18H8l-4 3v-4.2A6.49 6.49 0 0 1 3 11.5Z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01"/></svg>
+        </div>
+        <h3 class="hiw-card__step"><b>1</b> — 온라인 상담</h3>
+        <p class="hiw-card__desc">전담 코디네이터가 고객의 케이스를 함께 검토하고, 가장 적합한 시술 종류·회복 기간·비용·국내 병원 정보를 맞춤으로 안내합니다.</p>
+      </article>
+      <article class="hiw-card" data-reveal data-reveal="2">
+        <div class="hiw-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M12 11v5M9.5 13.5h5"/></svg>
+        </div>
+        <h3 class="hiw-card__step"><b>2</b> — 시술 &amp; 케어</h3>
+        <p class="hiw-card__desc">시술 전 과정을 함께하며 수술 후 회복 관리를 준비합니다. 병원 내 통역을 제공해 언어 장벽 없이 안심하고 진행할 수 있습니다.</p>
+      </article>
+      <article class="hiw-card" data-reveal data-reveal="3">
+        <div class="hiw-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a1.8 1.8 0 0 0-2.5-2.5L13.5 8.5 5.3 6.7a1 1 0 0 0-.9 1.7l4.2 3.2-2 2-2.5-.6a.8.8 0 0 0-.8 1.3l3 2.6 2.6 3a.8.8 0 0 0 1.3-.8l-.6-2.5 2-2 3.2 4.2a1 1 0 0 0 1.7-.9Z"/></svg>
+        </div>
+        <h3 class="hiw-card__step"><b>3</b> — 안전한 귀국</h3>
+        <p class="hiw-card__desc">담당 의료진의 회복 승인 후 숙소 복귀와 일정을 도와드립니다. 남은 여행을 충분히 즐기고 안전하게 귀국하실 수 있습니다.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SERVICES ============================== -->
+<section class="section section--surface" id="services">
+  <div class="wrap">
+    <div class="services__head" data-reveal>
+      <p class="eyebrow eyebrow--center">KMEDITOUR</p>
+      <h2 class="display h-lg">서비스</h2>
+    </div>
+    <p class="services__intro" data-reveal>지방흡입, 미용 시술, 모발 이식, 건강검진부터 프리미엄 서울 관광까지 —<br/>분야별 최고의 전문가를 찾아 연결합니다.</p>
+    <div class="acc" data-reveal>
+      <div class="acc-item is-open">
+        <button class="acc-head">무료 온라인 상담<span class="acc-icon"></span></button>
+        <div class="acc-body">
+          <div class="acc-body__inner">상담 폼을 통해 문의하시면 무료 온라인 상담을 받으실 수 있습니다. 고객의 고민에 맞는 시술 종류, 비용 안내, 회복 기간에 따른 권장 체류 일정을 함께 정리해 드립니다.</div>
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">진료 예약 대행<span class="acc-icon"></span></button>
+        <div class="acc-body">
+          <div class="acc-body__inner">신뢰할 수 있는 국내 병원·클리닉과의 진료 및 시술 예약을 전담 코디네이터가 대신 진행합니다. 일정 조율부터 사전 준비 안내까지 한 번에 처리해 드립니다.</div>
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">전담 통역 서비스<span class="acc-icon"></span></button>
+        <div class="acc-body">
+          <div class="acc-body__inner">상담과 시술 전 과정에 이중 언어 전담 통역이 동행합니다. 의료진과의 소통을 정확하게 전달하여 언어 장벽 없이 안심하고 진료받으실 수 있습니다.</div>
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">교통 &amp; 이동 지원<span class="acc-icon"></span></button>
+        <div class="acc-body">
+          <div class="acc-body__inner">공항 픽업부터 병원·숙소 간 이동까지 전 일정의 교통을 지원합니다. 시술 후 컨디션을 고려한 편안하고 안전한 이동을 준비해 드립니다.</div>
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">숙소 &amp; 회복 케어<span class="acc-icon"></span></button>
+        <div class="acc-body">
+          <div class="acc-body__inner">시술 일정과 회복 기간에 맞춘 숙소를 안내하고, 회복 중 필요한 케어와 응급 상황 대응까지 세심하게 관리합니다.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== WHY US ============================== -->
+<section class="section section--surface" id="whyus">
+  <div class="wrap">
+    <div class="whyus__head" data-reveal>
+      <p class="eyebrow eyebrow--center">Why KMEDITOUR</p>
+      <h2 class="display h-lg">우리를 선택하는 이유</h2>
+    </div>
+    <p class="whyus__intro" data-reveal><b>복잡한 의료 여정을 가장 단순하게.</b><br/>상담부터 시술, 회복까지 모든 과정을 전담 코디네이터가 함께하며 투명한 안내와 안심 케어를 약속합니다.</p>
+    <div class="compare" data-reveal>
+      <div class="compare__col compare__col--ours">
+        <h3 class="compare__title">KMEDITOUR와 함께라면</h3>
+        <ul class="compare__list">
+          <li><b>투명한 비용</b> — 추가 비용 없이 명확하게 안내합니다.</li>
+          <li><b>원스톱 케어</b> — 예약·통역·교통·숙소를 한 번에 관리합니다.</li>
+          <li><b>검증된 의료진</b> — 분야별 최고의 병원만 연결합니다.</li>
+        </ul>
+      </div>
+      <div class="compare__col">
+        <h3 class="compare__title">직접 준비할 경우</h3>
+        <ul class="compare__list">
+          <li><b>불투명한 비용</b> — 병원마다 가격과 숨은 비용이 제각각입니다.</li>
+          <li><b>번거로운 준비</b> — 모든 일정을 혼자 알아보고 조율해야 합니다.</li>
+          <li><b>정보의 한계</b> — 언어 장벽으로 정확한 정보를 얻기 어렵습니다.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== TRUST BAND ============================== -->
+<section class="trust">
+  <div class="wrap">
+    <p class="trust__intro" data-reveal>KMEDITOUR는 국내 정식 등록 의료관광 업체로서,<br> 보건당국과 공식 기관의 인증과 검증을 받은 신뢰할 수 있는 파트너입니다. <br>한국 최고의 의료 전문성과 안심 케어를 그대로 전해드립니다.</p>
+    <div class="trust__logos" data-reveal>
+      <div class="trust__logo">
+        <image-slot id="cert-khidi" shape="rect" fit="contain" src="assets/khidi-logo-white.png" style="width:90px" placeholder="인증 로고"></image-slot>
+      </div>
+      <div class="trust__logo">
+        <image-slot id="cert-mohw" shape="rect" fit="contain" src="assets/mhw-logo-white.png" style="width:162px" placeholder="인증 로고"></image-slot>
+      </div>
+      <div class="trust__logo">
+        <image-slot id="cert-sgi" shape="rect" fit="contain" src="assets/sgi-logo-white.png" style="width:225px" placeholder="인증 로고"></image-slot>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== BLOG ============================== -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="stay__head" data-reveal>
+      <p class="eyebrow eyebrow--center">KMEDITOUR Journal</p>
+      <h2 class="display h-lg">매거진</h2>
+    </div>
+    <div class="stay__grid">
+      <a class="stay-card" href="#" data-reveal>
+        <div class="stay-card__bg" style="background-image:url('https://picsum.photos/id/1048/1000/1200')"></div>
+        <p class="stay-card__label">Rooms &amp; Suites</p>
+        <h3 class="stay-card__title">고요와 전망이 머무는 객실</h3>
+        <div class="stay-card__tags">
+          <span>클럽 인터컨티넨탈</span>
+          <span>이그제큐티브</span>
+          <span>스위트</span>
+        </div>
+      </a>
+      <a class="stay-card" href="#dining" data-reveal data-reveal="2">
+        <div class="stay-card__bg" style="background-image:url('https://picsum.photos/id/431/1000/1200')"></div>
+        <p class="stay-card__label">Dining</p>
+        <h3 class="stay-card__title">미식의 여정을 시작하다</h3>
+        <div class="stay-card__tags">
+          <span>테이블 34</span>
+          <span>호빈</span>
+          <span>로비 라운지 &amp; 바</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FEATURE ============================== -->
+<section class="feature" id="wellness">
+  <div class="feature__viewport" data-reveal>
+    <div class="feature__track">
+      <div class="feature__slide">
+        <div class="feature__main">
+          <div style="background-image:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80')"></div>
+        </div>
+        <div class="feature__caption">
+          <div>
+            <p class="feature__kicker">All-in-One Care</p>
+            <h3 class="feature__title">시술부터 회복까지 한 번에</h3>
+          </div>
+          <div>
+            <p class="feature__desc">상담·예약·통역·교통·숙소까지, 전담 코디네이터가 모든 여정을 1:1로 설계합니다. 시술 후 회복은 물론, 서울에서의 시간을 더 특별하게 채우는 프리미엄 컨시어지 케어를 만나보세요.</p>
+            <a href="#" class="link-arrow">자세히 보기 <span class="ar">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="feature__slide">
+        <div class="feature__main">
+          <div style="background-image:url('https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=1600&q=80')"></div>
+        </div>
+        <div class="feature__caption">
+          <div>
+            <p class="feature__kicker">VIP Concierge</p>
+            <h3 class="feature__title">서울의 품격을<br/>온전히 누리다</h3>
+          </div>
+          <div>
+            <p class="feature__desc">프리미엄 숙소와 미식, 쇼핑까지 — 회복 후의 시간을 더 특별하게 채우는 맞춤 컨시어지 서비스. 당신의 일정에 맞춰 서울을 가장 우아하게 경험하는 방법을 제안합니다.</p>
+            <a href="#" class="link-arrow">자세히 보기 <span class="ar">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="feature__slide">
+        <div class="feature__main">
+          <!-- <div style="background-image:url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80')"></div> -->
+          <div style="background-image:url('https://plus.unsplash.com/premium_photo-1723619042218-710b1b0f2f8d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+        </div>
+        <div class="feature__caption">
+          <div>
+            <p class="feature__kicker">Interpreter Service</p>
+            <h3 class="feature__title">언어 장벽<br/> 없는 안심 진료</h3>
+          </div>
+          <div>
+            <p class="feature__desc">상담부터 시술 전 과정까지 이중 언어 전담 통역이 동행합니다. 의료진과의 소통을 정확하게 전달하여 낯선 곳에서도 안심하고 케어받을 수 있습니다.</p>
+            <a href="#" class="link-arrow">자세히 보기 <span class="ar">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="feature__controls">
+    <div class="feature__dots">
+      <button class="is-active" aria-label="슬라이드 1"></button>
+      <button aria-label="슬라이드 2"></button>
+      <button aria-label="슬라이드 3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== HIGHLIGHTS / NEWS ============================== -->
+<section class="section" id="highlights">
+  <div class="wrap">
+    <div class="highlights__head" data-reveal>
+      <p class="eyebrow eyebrow--center">KMEDITOUR Highlights</p>
+      <h2 class="display h-lg">서울 여행 소식</h2>
+    </div>
+    <div class="filters" data-reveal>
+      <button class="filter is-active" data-cat="all">전체</button>
+      <button class="filter" data-cat="offer">스페셜 오퍼</button>
+      <button class="filter" data-cat="dining">다이닝</button>
+      <button class="filter" data-cat="event">이벤트</button>
+    </div>
+    <div class="news-grid">
+      <a class="news-card" href="#" data-cat="offer" data-reveal>
+        <div class="news-card__img"><div style="background-image:url('https://picsum.photos/id/106/900/620')"></div></div>
+        <span class="news-card__cat">Special Offer</span>
+        <h3 class="news-card__title">여름을 더 특별하게, 서머 스테이케이션 패키지</h3>
+        <p class="news-card__date">2026.06.01</p>
+      </a>
+      <a class="news-card" href="#" data-cat="dining" data-reveal data-reveal="2">
+        <div class="news-card__img"><div style="background-image:url('https://picsum.photos/id/237/900/620')"></div></div>
+        <span class="news-card__cat">Dining</span>
+        <h3 class="news-card__title">제철 식재료로 완성한 테이블 34 여름 시즌 메뉴</h3>
+        <p class="news-card__date">2026.05.28</p>
+      </a>
+      <a class="news-card" href="#" data-cat="event" data-reveal data-reveal="3">
+        <div class="news-card__img"><div style="background-image:url('https://picsum.photos/id/431/900/620')"></div></div>
+        <span class="news-card__cat">Event</span>
+        <h3 class="news-card__title">로비 라운지에서 즐기는 클래식 라이브 공연</h3>
+        <p class="news-card__date">2026.05.20</p>
+      </a>
+      <a class="news-card" href="#" data-cat="offer" data-reveal>
+        <div class="news-card__img"><div style="background-image:url('https://picsum.photos/id/659/900/620')"></div></div>
+        <span class="news-card__cat">Special Offer</span>
+        <h3 class="news-card__title">클럽 인터컨티넨탈 업그레이드 프로모션</h3>
+        <p class="news-card__date">2026.05.15</p>
+      </a>
+      <a class="news-card" href="#" data-cat="dining" data-reveal data-reveal="2">
+        <div class="news-card__img"><div style="background-image:url('https://picsum.photos/id/488/900/620')"></div></div>
+        <span class="news-card__cat">Dining</span>
+        <h3 class="news-card__title">호빈, 미쉐린 셰프와 함께하는 한정 디너 코스</h3>
+        <p class="news-card__date">2026.05.09</p>
+      </a>
+      <a class="news-card" href="#" data-cat="event" data-reveal data-reveal="3">
+        <div class="news-card__img"><div style="background-image:url('https://picsum.photos/id/823/900/620')"></div></div>
+        <span class="news-card__cat">Event</span>
+        <h3 class="news-card__title">웨딩 페어 — 그랜드 볼룸에서 그리는 새로운 시작</h3>
+        <p class="news-card__date">2026.05.02</p>
+      </a>
+    </div>
+    <div class="highlights__more" data-reveal>
+      <a href="#" class="btn">소식 더 보기</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CTA SECTION ============================== -->
+<section class="cta-dark" data-reveal>
+  <div class="wrap">
+    <div class="cta-dark__inner">
+      <h2 class="cta-dark__title">의료 여정을<br/>시작할 준비가 되셨나요?</h2>
+      <p class="cta-dark__desc">지금 상담을 예약하고, 전담 코디네이터와 함께 당신만의 K-Beauty 메디걸 여정을 설계해보세요.</p>
+      <a href="#booking" class="btn btn--primary">상담 예약하기</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOLLOW US ============================== -->
+<section class="section section--surface">
+  <div class="wrap">
+    <div class="follow__head" data-reveal>
+      <p class="eyebrow eyebrow--center">Follow Us</p>
+      <h2 class="display h-lg">@kmeditour</h2>
+    </div>
+    <div class="follow-grid" data-reveal>
+      <a class="follow-card" href="#"><div style="background-image:url('https://picsum.photos/id/225/500/620')"></div><span>#GrandIntercon</span></a>
+      <a class="follow-card" href="#"><div style="background-image:url('https://picsum.photos/id/431/500/620')"></div><span>#Table34</span></a>
+      <a class="follow-card" href="#"><div style="background-image:url('https://picsum.photos/id/326/500/620')"></div><span>#KMEDITOUR</span></a>
+      <a class="follow-card" href="#"><div style="background-image:url('https://picsum.photos/id/1059/500/620')"></div><span>#ClubLounge</span></a>
+      <a class="follow-card" href="#"><div style="background-image:url('https://picsum.photos/id/292/500/620')"></div><span>#Hobin</span></a>
+      <a class="follow-card" href="#"><div style="background-image:url('https://picsum.photos/id/367/500/620')"></div><span>#Wellness</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <a href="#">개인정보처리방침</a>
+      <a href="#">이용약관</a>
+      <a href="#">쿠키 정책</a>
+      <a href="#">접근성</a>
+      <a href="#">채용</a>
+      <a href="#">제휴 문의</a>
+      <a href="#">고객의 소리</a>
+    </div>
+    <div class="footer__mid">
+      <div>
+        <div class="footer__brand">KMEDITOUR<small>Premium Concierge in Seoul</small></div>
+        <p style="margin-top:20px; max-width:34ch; line-height:1.7;">한국의 앞선 의료와 서울의 품격을 잇는 프리미엄 컨시어지. 시술부터 머무름까지, 전담 코디네이터가 당신만의 여정을 섬세하게 완성합니다.</p>
+      </div>
+      <dl>
+        <dt>대표자</dt><dd>이석재</dd>
+        <dt>주소</dt><dd>서울특별시 강남구 압구정로14길 22, 4층(신사동)</dd>
+        <dt>대표전화</dt><dd>+82-2-514-0799</dd>
+        <dt>사업자등록번호</dt><dd>558-81-03752</dd>
+      </dl>
+      <dl>
+        <dt>상담 운영</dt><dd>연중무휴 09:00 — 21:00</dd>
+        <dt>카카오 상담</dt><dd>@KMEDITOUR</dd>
+        <dt>이메일</dt><dd>contact@kmeditour.com</dd>
+        <dt>전담 케어</dt><dd>1:1 코디네이터 배정</dd>
+      </dl>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 KMEDITOUR. All rights reserved.</span>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H8v3h3v6h3v-6h2.5l.5-3H14V9z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M11 9.5l4 2.5-4 2.5z" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="image-slot.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
