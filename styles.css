@@ -1656,7 +1656,7 @@ ul {
     animation: rise 1s 0.1s forwards;
   }
   .hero__title {
-    font-size: clamp(38px, 8vw, 60px);
+    font-size: clamp(40px, 8vw, 60px);
   }
   .hero__desc {
     font-size: 16px;
