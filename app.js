@@ -236,6 +236,15 @@
     window.requestAnimationFrame(() => goFeature(0, false));
   }
 
+  /* ---------- Top button ---------- */
+  const topBtn = document.querySelector(".top-btn");
+  if (topBtn) {
+    window.addEventListener("scroll", () => {
+      topBtn.classList.toggle("is-visible", window.scrollY > 400);
+    }, { passive: true });
+    topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  }
+
   /* ---------- Reveal on scroll ---------- */
   const io = new IntersectionObserver(
     (entries) => {
