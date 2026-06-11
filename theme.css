@@ -1,0 +1,121 @@
+/* ============================================================
+   KMEDITOUR — Design System Tokens
+   Primitive → Semantic 구조
+   ============================================================ */
+
+:root {
+
+  /* ─── Primitive: Color ─── */
+
+  /* Gray — Warm Gray + Deep Dark */
+  --color-white:   #ffffff;
+  --color-gray-25:  #fbf9f6;
+  --color-gray-50:  #f6f3f0;
+  --color-gray-100: #e6e0d8;
+  --color-gray-200: #d8d0c5;
+  --color-gray-500: #6a6a6a;
+  --color-gray-700: #333333;
+  --color-gray-800: #222222;
+  --color-gray-900: #1A1715;
+  --color-black:    #000000;
+
+  /* Dust-Rose — Mauve / 브랜드 포인트 */
+  --color-dust-rose-500: #7c4d56;
+  --color-dust-rose-700: #653d45;
+
+  /* Teal — CTA 섹션 배경 */
+  --color-teal-800: #0c506b;
+
+  /* Red */
+  --color-red-500: #e03c3c;
+
+
+  /* ─── Primitive: Typography ─── */
+
+  --font-sans:  Optima, Candara, "Pretendard", source-sans-pro, sans-serif;
+
+  --text-xs:   11px;
+  --text-sm:   13px;
+  --text-base: 15px;
+  --text-md:   17px;
+  --text-lg:   18px;
+  --text-xl:   24px;
+  --text-2xl:  28px;
+  --text-3xl:  clamp(24px, 2.4vw, 34px);
+  --text-4xl:  clamp(30px, 3.4vw, 46px);
+  --text-5xl:  clamp(38px, 5.4vw, 76px);
+  --text-6xl:  clamp(56px, 5vw, 80px);
+  --text-hero: clamp(44px, 6.6vw, 104px);
+
+
+  /* ─── Primitive: Spacing ─── */
+
+  --space-1:      4px;
+  --space-2:      8px;
+  --space-3:      12px;
+  --space-4:      16px;
+  --space-5:      20px;
+  --space-6:      24px;
+  --space-7:      28px;
+  --space-8:      32px;
+  --space-10:     40px;
+  --space-11:     44px;
+  --space-12:     48px;
+  --space-13:     52px;
+  --space-14:     56px;
+  --space-16:     64px;
+  --space-18:     72px;
+  --space-20:     80px;
+  --space-gutter: clamp(16px, 1.6vw, 34px);
+
+
+  /* ─── Primitive: Radius ─── */
+
+  --radius-full: 50%;
+  --radius-pill: 100px;
+
+
+  /* ─── Primitive: Shadow ─── */
+
+  --shadow-header: 0 1px 0 var(--color-gray-100);
+  --shadow-card:   0 30px 70px -30px rgba(40, 30, 25, 0.35);
+  --shadow-btn:    0 4px 16px rgba(0, 0, 0, 0.12);
+
+
+  /* ─── Semantic: Background ─── */
+
+  --color-bg-white:          var(--color-gray-25);
+  --color-surface:     var(--color-gray-50);
+  --color-bg-black:     var(--color-gray-900);
+  --color-bg-teal:   var(--color-teal-800);
+
+
+  /* ─── Semantic: Text ─── */
+
+  --color-heading:     var(--color-gray-900);
+  --color-heading-sub: var(--color-gray-800);
+  --color-body:        var(--color-gray-500);
+  --color-caption:     var(--color-dust-rose-500);
+
+
+  /* ─── Semantic: Border ─── */
+
+  --color-border:        var(--color-gray-100);
+  --color-border-strong: var(--color-gray-200);
+
+
+  /* ─── Semantic: Interactive ─── */
+
+  --color-chip:      var(--color-dust-rose-500);
+  --color-btn:       var(--color-gray-900);
+  --color-btn-hover: var(--color-gray-800);
+
+
+  /* ─── Layout ─── */
+
+  --maxw:     1920px;
+  --gutter:   var(--space-gutter);
+  --header-h: 92px;
+
+
+}
