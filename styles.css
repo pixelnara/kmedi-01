@@ -2188,10 +2188,11 @@ ul {
     margin-top: 0;
   }
   .compare__list b {
-    font-size: var(--text-base);
+    font-size: var(--text-md);
   }
   .compare__list li > div > span {
-    font-size: var(--text-sm);
+    font-size: var(--text-14);
+    font-weight: 500;
   }
 
   /* Footer */
