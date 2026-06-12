@@ -25,9 +25,8 @@
   --beige-100: #ece5df;
 
   /* Blue */
-  --blue-400: #2975f0;
-  --blue-450: #1b63d1;
-  --blue-500: #0c51ca;
+  --blue-500: #0c42e3;
+  /* --blue-500: #0c3cca; */
 
   /* Teal — 라이트 서피스 */
   --teal-100: #dee3e3;
@@ -133,6 +132,7 @@
   --btn2: var(--gray-800);
   --btn-white: var(--white);
   --btn-hover: var(--gray-800);
+  --btn-hover2: var(--blue-500);
 
   /* ─── Layout ─── */
 

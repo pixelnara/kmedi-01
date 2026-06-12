@@ -180,7 +180,7 @@ ul {
   background: var(--btn);
 }
 .btn--primary:hover {
-  background: var(--btn-hover);
+  background: var(--btn-hover2);
 }
 
 /* ============================================================
