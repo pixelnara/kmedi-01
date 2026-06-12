@@ -1448,11 +1448,13 @@ ul {
 .gnb-col a.gnb-link--bold {
   font-weight: 550;
 }
-.gnb-col a:hover {
-  color: var(--text-caption);
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
+@media (hover: hover) {
+  .gnb-col a:hover {
+    color: var(--text-caption);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
 }
 
 /* ============================================================
