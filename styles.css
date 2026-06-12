@@ -472,7 +472,7 @@ ul {
 .hero__desc {
   margin-top: 30px;
   font-size: var(--text-30);
-  font-weight: 600;
+  font-weight: 300;
   max-width: 80ch;
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.92);
@@ -481,8 +481,8 @@ ul {
   animation: rise 1s 0.55s forwards;
 }
 .hero__desc--strong {
-  font-weight: 800;
-  color: var(--white);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.92);
 }
 .hero__cta {
   display: none;
@@ -2185,7 +2185,7 @@ ul {
   }
   .hero__title {
     margin-top: auto;
-    font-size: clamp(36px, 9vw, 52px);
+    font-size: 24px;
     line-height: 1.2;
     letter-spacing: var(--tracking-tight);
     text-align: left;
@@ -2195,9 +2195,13 @@ ul {
     font-size: var(--text-base);
     color: rgba(255, 255, 255, 0.85);
     margin-top: var(--space-4);
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.75;
     max-width: 100%;
+  }
+  .hero__desc--strong {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.85);
   }
   .hero__cta {
     display: none;
