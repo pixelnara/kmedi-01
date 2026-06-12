@@ -1876,6 +1876,9 @@ ul {
   }
 
   /* Accordion */
+  .acc {
+    gap: 2px;
+  }
   .acc-head {
     font-size: var(--text-21);
     padding: var(--space-5) var(--space-5);
