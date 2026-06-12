@@ -1432,7 +1432,7 @@ ul {
   gap: 11px;
 }
 .gnb-col a {
-  color: var(--text-body);
+  color: var(--text-body2);
   font-size: var(--text-base);
   transition: 0.3s;
   text-decoration: none;
