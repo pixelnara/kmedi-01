@@ -8,30 +8,23 @@
 
   /* Gray — Cool Gray + Deep Dark (스케일 규칙: 번호↑ = 명도↓) */
   --white: #ffffff;
-  --gray-20: #fafafc;
   --gray-50: #f8f8fb;
-  --gray-100: #f0f0fa; /* 입력값 (중립) */
-  --gray-150: #eaeaf1; /* 입력값 */
+  --gray-150: #eaeaf1;
   --gray-200: #e4e4ec;
-  --gray-300: #cdcdd7;
   --gray-400: #9e9eac;
   --gray-500: #727282;
   --gray-600: #565666;
-  --gray-700: #40404f;
   --gray-800: #2e2e3b;
   --gray-900: #1c1c26;
   --gray-950: #14141c;
-  --black: #000000;
 
   /* Blue */
   --blue-500: #0c42e3;
-  --blue-700: #0c3cca;
+  --blue-700: #103f8a;
+  --blue-800: #0d2b5a;
 
   /* Teal — 라이트 서피스 */
   --teal-100: #dee3e3;
-
-  /* Red */
-  --red-500: #e03c3c; /* 예약: 에러/경고 상태 */
 
   /* ─── Primitive: Typography ─── */
 
@@ -128,10 +121,10 @@
 
   --chip: var(--gray-900);
   --btn: var(--gray-950);
-  --btn2: var(--gray-800);
   --btn-white: var(--white);
   --btn-hover: var(--gray-800);
-  --btn-hover2: var(--blue-500);
+  --btn-hover2: var(--blue-700);
+  --btn-hover3: var(--blue-800);
 
   /* ─── Layout ─── */
 

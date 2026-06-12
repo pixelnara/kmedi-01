@@ -172,7 +172,7 @@ ul {
   border-color: transparent;
 }
 .btn--primary2 {
-  background: var(--btn2);
+  background: var(--blue-700);
   color: var(--bg-white);
   border-color: transparent;
 }
@@ -181,6 +181,9 @@ ul {
 }
 .btn--primary:hover {
   background: var(--btn-hover2);
+}
+.btn--primary2:hover {
+  background: var(--btn-hover3);
 }
 
 /* ============================================================
