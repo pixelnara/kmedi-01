@@ -124,23 +124,14 @@
     });
   });
 
-  /* ---------- Feature slider (transform drag + dots, centered peek) ---------- */
+  /* ---------- Feature slider (bounded, no loop) ---------- */
   const fvp = document.querySelector(".feature__viewport");
   if (fvp) {
     const ftrack = fvp.querySelector(".feature__track");
-    const originalSlides = [...fvp.querySelectorAll(".feature__slide")];
-    const fDots = [...document.querySelectorAll(".feature__dots button")];
-    const slideCount = originalSlides.length;
-    let fIndex = 0;
-
-    // clone slides on both sides to create an infinite scrolling effect
-    originalSlides.forEach((slide) => ftrack.appendChild(slide.cloneNode(true)));
-    originalSlides
-      .slice()
-      .reverse()
-      .forEach((slide) => ftrack.insertBefore(slide.cloneNode(true), ftrack.firstChild));
     const fSlides = [...fvp.querySelectorAll(".feature__slide")];
-    const cloneOffset = slideCount;
+    const fDots = [...document.querySelectorAll(".feature__dots button")];
+    const slideCount = fSlides.length;
+    let fIndex = 0;
 
     function metrics() {
       const w = fSlides[0].getBoundingClientRect().width;
@@ -155,47 +146,14 @@
       ftrack.classList.toggle("no-anim", !anim);
       ftrack.style.transform = "translateX(" + x + "px)";
     }
-    function wrapIndex(i) {
-      return ((i % slideCount) + slideCount) % slideCount;
-    }
-
-    // isWrapping: true while the clone-to-real teleport hasn't happened yet.
-    // New drags are blocked during this window to keep `base` consistent.
-    let isWrapping = false;
-    let wrapFallback = null;
-
-    function finishWrap() {
-      if (!isWrapping) return;
-      isWrapping = false;
-      clearTimeout(wrapFallback);
-      setTranslate(baseFor(cloneOffset + fIndex), false);
-    }
-
-    ftrack.addEventListener("transitionend", (e) => {
-      if (e.propertyName === "transform") finishWrap();
-    });
-
     function goFeature(i, anim) {
-      const shouldAnimate = anim !== false;
-      const needsClone = shouldAnimate && (i < 0 || i >= slideCount);
-      const visualIdx = needsClone ? cloneOffset + i : cloneOffset + wrapIndex(i);
-      fIndex = wrapIndex(i);
-
-      if (needsClone) {
-        isWrapping = true;
-        clearTimeout(wrapFallback);
-        wrapFallback = setTimeout(finishWrap, 700); // safety net if transitionend misfires
-      } else {
-        isWrapping = false;
-        clearTimeout(wrapFallback);
-      }
-
-      setTranslate(baseFor(visualIdx), shouldAnimate);
+      fIndex = Math.max(0, Math.min(slideCount - 1, i));
+      setTranslate(baseFor(fIndex), anim !== false);
       fDots.forEach((d, k) => d.classList.toggle("is-active", k === fIndex));
     }
     fDots.forEach((d, k) => d.addEventListener("click", () => goFeature(k)));
 
-    // pointer drag — only hijack when gesture is clearly horizontal
+    // pointer drag
     let down = false,
       decided = false,
       horiz = false;
@@ -206,14 +164,13 @@
       moved = false;
     fvp.addEventListener("pointerdown", (e) => {
       if (e.pointerType === "mouse" && e.button !== 0) return;
-      if (isWrapping) return; // wait for infinite-loop teleport to finish
       down = true;
       decided = false;
       horiz = false;
       moved = false;
       startX = lastX = e.clientX;
       startY = e.clientY;
-      base = baseFor(cloneOffset + fIndex);
+      base = baseFor(fIndex);
     });
     fvp.addEventListener("pointermove", (e) => {
       if (!down) return;
@@ -228,43 +185,36 @@
           fvp.setPointerCapture(e.pointerId);
         }
       }
-      if (!horiz) return; // vertical gesture → let page scroll
+      if (!horiz) return;
       moved = true;
-      lastX = e.clientX; // track real position; pointercancel may report stale clientX
+      lastX = e.clientX;
       e.preventDefault();
-      setTranslate(base + dx, false);
+      // clamp drag so it can't pull past first or last slide
+      const { step } = metrics();
+      const maxPull = step * 0.3;
+      const clamped =
+        fIndex === 0 ? Math.min(dx, maxPull) :
+        fIndex === slideCount - 1 ? Math.max(dx, -maxPull) : dx;
+      setTranslate(base + clamped, false);
     });
     function endDrag(e) {
       if (!down) return;
       down = false;
       if (horiz) {
         fvp.classList.remove("is-dragging");
-        try {
-          fvp.releasePointerCapture(e.pointerId);
-        } catch (err) {}
-        // Use lastX instead of e.clientX: pointercancel on some browsers
-        // reports clientX = startX (or 0), which would cause a false snap-back.
+        try { fvp.releasePointerCapture(e.pointerId); } catch (_) {}
         const dx = lastX - startX;
         const { step } = metrics();
         let shift = 0;
-        if (Math.abs(dx) > step * 0.08) {
-          shift = dx < 0 ? 1 : -1;
-        }
+        if (Math.abs(dx) > step * 0.08) shift = dx < 0 ? 1 : -1;
         goFeature(fIndex + shift);
       }
     }
     fvp.addEventListener("pointerup", endDrag);
     fvp.addEventListener("pointercancel", endDrag);
-    fvp.addEventListener(
-      "click",
-      (e) => {
-        if (moved) {
-          e.preventDefault();
-          e.stopPropagation();
-        }
-      },
-      true,
-    );
+    fvp.addEventListener("click", (e) => {
+      if (moved) { e.preventDefault(); e.stopPropagation(); }
+    }, true);
     fvp.addEventListener("dragstart", (e) => e.preventDefault());
 
     window.addEventListener("resize", () => goFeature(fIndex, false));
