@@ -2087,7 +2087,7 @@ ul {
     grid-template-columns: 1fr;
   }
   .compare__title {
-    font-size: var(--text-xl);
+    font-size: var(--text-lg);
     text-align: center;
   }
   .compare__col {
