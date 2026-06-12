@@ -2179,13 +2179,19 @@ ul {
     background: var(--white);
   }
   .compare__list li {
-    padding: var(--space-4) 0;
+    padding: var(--space-5) 0;
+    gap: var(--space-4);
+  }
+  .compare__list li::before {
+    font-size: var(--text-21);
+    font-weight: 900;
+    margin-top: 0;
   }
   .compare__list b {
-    font-size: var(--text-sm);
+    font-size: var(--text-base);
   }
   .compare__list li > div > span {
-    font-size: var(--text-xs);
+    font-size: var(--text-sm);
   }
 
   /* Footer */
