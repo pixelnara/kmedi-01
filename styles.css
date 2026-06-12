@@ -1001,7 +1001,7 @@ ul {
 }
 .compare__col--ours {
   background: var(--white);
-  border: 3px solid var(--blue-700);
+  border: 3px solid var(--blue-600);
 }
 .compare__title {
   font-family: var(--font-sans);
@@ -1016,7 +1016,7 @@ ul {
 }
 .compare__col--ours .compare__title {
   color: var(--text-heading);
-  border-bottom-color: var(--blue-700);
+  border-bottom-color: var(--blue-600);
 }
 .compare__list {
   display: flex;
@@ -1593,7 +1593,9 @@ ul {
   font-weight: 600;
   color: var(--text-heading);
   letter-spacing: var(--tracking-tight);
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 .acc-item.is-open .acc-head {
   background: var(--blue-700);
