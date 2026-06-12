@@ -204,7 +204,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 26px;
+  gap: 20px;
   height: 44px;
   font-size: 12.5px;
   letter-spacing: 0.04em;
