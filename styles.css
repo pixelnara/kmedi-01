@@ -2165,7 +2165,7 @@ ul {
     font-weight: 750;
     letter-spacing: var(--tracking-tight);
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 1);
     margin-bottom: var(--space-6);
     opacity: 0;
     transform: translateY(20px);
