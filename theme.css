@@ -106,6 +106,7 @@
 
   --bg-white: var(--white);
   --surface: var(--gray-50);
+  --surface-alt: var(--gray-150);   /* 아코디언·보조 서피스 */
   --surface-teal: var(--teal-100);
   --bg-black: var(--gray-950);
 
@@ -135,6 +136,12 @@
   --btn-hover: var(--gray-800);
   --btn-hover2: var(--blue-700);
   --btn-hover3: var(--blue-800);
+
+  /* ─── Semantic: Accent ─── */
+
+  --accent:      var(--blue-500);  /* 활성 인디케이터 (슬라이더 도트 등) */
+  --accent-mid:  var(--blue-600);  /* UI 아이콘 · 체크마크 · 숫자 원 */
+  --accent-dark: var(--blue-700);  /* 아코디언 배경 · 비교 제목 · 브랜드 버튼 */
 
   /* ─── Layout ─── */
 

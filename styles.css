@@ -172,7 +172,7 @@ ul {
   border-color: transparent;
 }
 .btn--primary2 {
-  background: var(--blue-700);
+  background: var(--accent-dark);
   color: var(--bg-white);
   border-color: transparent;
 }
@@ -287,7 +287,7 @@ ul {
   padding: var(--space-2-5) var(--space-5);
   font-size: var(--text-sm);
   font-weight: 600;
-  color: var(--gray-900);
+  color: var(--text-heading);
   cursor: pointer;
   transition: background 0.15s;
   letter-spacing: 0.02em;
@@ -297,7 +297,7 @@ ul {
   line-height: 1;
 }
 .lang-option:hover {
-  background: var(--gray-50);
+  background: var(--surface);
 }
 .lang-option.is-active {
   font-weight: 800;
@@ -726,7 +726,7 @@ ul {
   letter-spacing: var(--tracking-normal);
   padding: 5px 10px 4px;
   background: var(--white);
-  color: var(--gray-900);
+  color: var(--text-heading);
   border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: var(--radius-1px);
   transition:
@@ -1008,7 +1008,7 @@ ul {
   transition: background 0.3s;
 }
 .feature__dots button.is-active {
-  background: var(--blue-500);
+  background: var(--accent);
 }
 .feature__nav {
   display: flex;
@@ -1053,14 +1053,14 @@ ul {
   width: 100%;
 }
 .compare__col {
-  background: var(--gray-50);
+  background: var(--surface);
   padding: 44px;
   border: none;
-  border-top: 4px solid var(--gray-800);
+  border-top: 4px solid var(--border-2);
 }
 .compare__col--ours {
   background: var(--white);
-  border-top: 4px solid var(--blue-600);
+  border-top: 4px solid var(--accent-mid);
   box-shadow: 0 8px 40px -8px rgba(17, 82, 187, 0.12);
 }
 .compare__title {
@@ -1075,7 +1075,7 @@ ul {
   text-align: left;
 }
 .compare__col--ours .compare__title {
-  color: var(--blue-700);
+  color: var(--accent-dark);
   border-bottom: none;
 }
 .compare__list {
@@ -1107,11 +1107,11 @@ ul {
 }
 .compare__col--ours .compare__list li::before {
   content: "✓";
-  color: var(--blue-600);
+  color: var(--accent-mid);
 }
 .compare__col:not(.compare__col--ours) .compare__list li::before {
   content: "✕";
-  color: var(--gray-400);
+  color: var(--text-subtle);
   font-weight: 400;
 }
 .compare__list li > div {
@@ -1311,7 +1311,7 @@ ul {
 }
 .cta-dark .btn:hover {
   background: var(--white);
-  color: var(--gray-950);
+  color: var(--bg-black);
 }
 
 /* ============================================================
@@ -1516,7 +1516,7 @@ ul {
   height: 56px;
   border-radius: var(--radius-full);
   background: var(--white);
-  color: var(--gray-950);
+  color: var(--bg-black);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1527,7 +1527,7 @@ ul {
     transform 0.3s ease;
 }
 .chat-btn:hover {
-  background: var(--gray-50);
+  background: var(--surface);
   transform: scale(1.08);
 }
 .chat-btn svg {
@@ -1586,7 +1586,7 @@ ul {
   gap: 11px;
 }
 .gnb-col a {
-  color: var(--gray-900);
+  color: var(--text-heading);
   font-size: var(--text-md);
   letter-spacing: var(--tracking-tight);
   transition: 0.3s;
@@ -1626,7 +1626,7 @@ ul {
 .gnb-sub-list li a {
   font-size: var(--text-base);
   font-weight: 400;
-  color: var(--gray-900);
+  color: var(--text-heading);
   line-height: 2;
   letter-spacing: 0;
 }
@@ -1669,7 +1669,7 @@ ul {
   gap: 5px;
 }
 .acc-item {
-  background: var(--gray-150);
+  background: var(--surface-alt);
   transition: background 0.3s;
 }
 .acc-item.is-open {
@@ -1693,7 +1693,7 @@ ul {
     color 0.3s;
 }
 .acc-item.is-open .acc-head {
-  background: var(--blue-700);
+  background: var(--accent-dark);
   color: var(--white);
 }
 .acc-icon {
@@ -1770,7 +1770,7 @@ ul {
   border-right: none;
 }
 .hiw-card__icon {
-  color: var(--blue-600);
+  color: var(--accent-mid);
   margin-bottom: var(--space-8);
 }
 .hiw-card__icon svg {
@@ -1790,7 +1790,7 @@ ul {
   display: inline;
 }
 .hiw-card__step b {
-  color: var(--blue-600);
+  color: var(--accent-mid);
   font-weight: 800;
 }
 .hiw-card__desc {
@@ -1840,7 +1840,7 @@ ul {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: var(--blue-600);
+    background: var(--accent-mid);
     color: var(--white);
     font-family: var(--font-sans);
     font-size: var(--text-sm);
@@ -1964,7 +1964,7 @@ ul {
     padding: var(--space-5) 0;
     font-size: var(--text-21);
     font-weight: 500;
-    color: var(--gray-900);
+    color: var(--text-heading);
     letter-spacing: var(--tracking-tight);
     border-bottom: 1px solid var(--border);
     margin-bottom: 0;
@@ -1992,7 +1992,7 @@ ul {
     display: none;
     flex-direction: column;
     gap: 0;
-    background: var(--gray-50);
+    background: var(--surface);
     padding: var(--space-2) var(--space-4);
   }
   .gnb-col.is-open ul {
@@ -2003,7 +2003,7 @@ ul {
     padding: var(--space-4) 0;
     font-size: var(--text-18);
     font-weight: 400;
-    color: var(--gray-600);
+    color: var(--text-body2);
     letter-spacing: var(--tracking-tight);
     line-height: 1.4;
     border-bottom: 1px solid var(--border);
@@ -2033,7 +2033,7 @@ ul {
     padding: var(--space-4) 0;
     font-size: var(--text-18);
     font-weight: 400;
-    color: var(--gray-600);
+    color: var(--text-body2);
     letter-spacing: var(--tracking-tight);
     line-height: 1.4;
   }
@@ -2070,7 +2070,7 @@ ul {
     display: block;
     padding: var(--space-3) 0;
     font-size: var(--text-sm);
-    color: var(--gray-500);
+    color: var(--text-body);
     letter-spacing: 0;
     border-bottom: 1px solid var(--border);
     line-height: 1.4;
@@ -2084,7 +2084,7 @@ ul {
     justify-content: space-between;
     margin-top: var(--space-8);
     padding: var(--space-6) var(--space-6);
-    background: var(--gray-950);
+    background: var(--bg-black);
     color: var(--white);
     text-decoration: none;
   }
@@ -2294,7 +2294,7 @@ ul {
     padding: var(--space-5) var(--space-5);
   }
   .acc-item.is-open .acc-head {
-    background: var(--blue-700);
+    background: var(--accent-dark);
     color: var(--white);
   }
   .acc-item.is-open {
@@ -2355,7 +2355,7 @@ ul {
     letter-spacing: var(--tracking-tight);
   }
   .acc-item.is-open .acc-head {
-    background: var(--blue-700);
+    background: var(--accent-dark);
     color: var(--white);
   }
   .acc-item.is-open {
