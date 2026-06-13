@@ -1533,7 +1533,7 @@ ul {
 }
 .footer__social {
   display: flex;
-  gap: 14px;
+  gap: 8px;
 }
 .footer__social a {
   width: 38px;
