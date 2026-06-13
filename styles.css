@@ -2240,8 +2240,11 @@ ul {
   }
   .header-lang-btn {
     display: flex;
+    align-items: center;
     color: var(--gray-950);
     gap: 4px;
+    width: auto;
+    height: auto;
   }
   /* 하단바 v2 활성 / v1 숨김 */
   .mobile-bar--v1 {
