@@ -1050,7 +1050,7 @@ ul {
   font-family: var(--font-sans);
   color: var(--text-caption);
   font-size: var(--text-14);
-  letter-spacing: var(--tracking-wider);
+  letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 16px;
@@ -1194,7 +1194,7 @@ ul {
 }
 .compare__col--ours .compare__list li::before {
   content: "✓";
-  color: var(--accent-mid);
+  color: var(--accent);
 }
 .compare__col:not(.compare__col--ours) .compare__list li::before {
   content: "✕";
@@ -1930,7 +1930,7 @@ ul {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: var(--accent-dark);
+    background: var(--accent-mid);
     color: var(--white);
     font-family: var(--font-sans);
     font-size: var(--text-13);
