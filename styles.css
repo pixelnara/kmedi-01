@@ -2185,6 +2185,10 @@ ul {
   }
   .header-bell {
     display: flex;
+    color: var(--gray-950);
+  }
+  .header-bell svg {
+    stroke-width: 2.5;
   }
   .menu-btn {
     display: flex;
