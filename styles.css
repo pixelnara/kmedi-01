@@ -446,7 +446,7 @@ ul {
   color: var(--gray-950);
 }
 .header-lang-code {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--gray-950);
@@ -2236,7 +2236,6 @@ ul {
   .header {
     background: var(--bg-white);
     color: var(--text-heading);
-    box-shadow: 0 1px 0 var(--border);
   }
   /* 상단바 v2 활성 / v1 숨김 */
   .header-right--v1 {
@@ -2275,7 +2274,7 @@ ul {
     letter-spacing: 0.1em;
     color: var(--gray-950);
     line-height: 1.1;
-    padding-top: var(--space-1);
+    padding-top: var(--space-1-5);
   }
   .brand-sub-mobile {
     display: block;
